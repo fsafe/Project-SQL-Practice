@@ -87,15 +87,15 @@ SELECT name,
 FROM Facilities
 
 name	        monthlymaintenance	affordability
-Tennis Court 1	200	                expensive
-Tennis Court 2	200	                expensive
-Badminton Court	50	                cheap
-Table Tennis	10	                cheap
-Massage Room 1	3000	                expensive
-Massage Room 2	3000	                expensive
-Squash Court	80	                cheap
-Snooker Table	15	                cheap
-Pool Table	15	                cheap
+Tennis Court 1  200                     expensive
+Tennis Court 2  200                     expensive
+Badminton Court 50                      cheap
+Table Tennis    10                      cheap
+Massage Room 1  3000                    expensive
+Massage Room 2  3000                    expensive
+Squash Court    80                      cheap
+Snooker Table   15	                cheap
+Pool Table      15                      cheap
  
 
 /* Q6: You'd like to get the first and last name of the last member(s)
@@ -109,7 +109,7 @@ WHERE starttime = (SELECT MAX(starttime) FROM Bookings) AND
       firstname != 'GUEST'
 
 firstname	surname
-Henry	        Worthington-Smyth
+Henry           Worthington-Smyth
 
 
 /* Q7: How can you produce a list of all members who have used a tennis court?
@@ -129,66 +129,66 @@ WHERE Facilities.name LIKE '%Tennis Court%'
 ORDER BY member_name
 
 name	        member_name
-Tennis Court 1	Anna Mackenzie
-Tennis Court 2	Anna Mackenzie
-Tennis Court 1	Anne Baker
-Tennis Court 2	Anne Baker
-Tennis Court 1	Burton Tracy
-Tennis Court 2	Burton Tracy
-Tennis Court 1	Charles Owen
-Tennis Court 2	Charles Owen
-Tennis Court 1	Darren Smith
-Tennis Court 2	Darren Smith
-Tennis Court 2	David Farrell
-Tennis Court 1	David Farrell
-Tennis Court 2	David Jones
-Tennis Court 1	David Jones
-Tennis Court 1	David Pinker
-Tennis Court 2	David Pinker
-Tennis Court 2	Douglas Jones
-Tennis Court 1	Douglas Jones
-Tennis Court 1	Erica Crumpet
-Tennis Court 2	Erica Crumpet
-Tennis Court 1	Florence Bader
-Tennis Court 2	Florence Bader
-Tennis Court 2	Gerald Butters
-Tennis Court 1	Gerald Butters
-Tennis Court 1	GUEST GUEST
-Tennis Court 2	GUEST GUEST
-Tennis Court 1	Henrietta Rumney
-Tennis Court 2	Henrietta Rumney
-Tennis Court 1	Henry Worthington-Smyth
-Tennis Court 2	Henry Worthington-Smyth
-Tennis Court 1	Hyacinth Tupperware
-Tennis Court 2	Hyacinth Tupperware
-Tennis Court 1	Jack Smith
-Tennis Court 2	Jack Smith
-Tennis Court 1	Janice Joplette
-Tennis Court 2	Janice Joplette
-Tennis Court 2	Jemima Farrell
-Tennis Court 1	Jemima Farrell
-Tennis Court 2	Joan Coplin
-Tennis Court 1	Joan Coplin
-Tennis Court 2	John Hunt
-Tennis Court 1	John Hunt
-Tennis Court 2	Matthew Genting
-Tennis Court 1	Matthew Genting
-Tennis Court 2	Millicent Purview
-Tennis Court 1	Millicent Purview
-Tennis Court 2	Nancy Dare
-Tennis Court 1	Nancy Dare
-Tennis Court 2	Ponder Stibbons
-Tennis Court 1	Ponder Stibbons
-Tennis Court 1	Ramnaresh Sarwin
-Tennis Court 2	Ramnaresh Sarwin
-Tennis Court 1	Tim Boothe
-Tennis Court 2	Tim Boothe
-Tennis Court 2	Tim Rownam
-Tennis Court 1	Tim Rownam
-Tennis Court 1	Timothy Baker
-Tennis Court 2	Timothy Baker
-Tennis Court 1	Tracy Smith
-Tennis Court 2	Tracy Smith
+Tennis Court 1  Anna Mackenzie
+Tennis Court 2  Anna Mackenzie
+Tennis Court 1  Anne Baker
+Tennis Court 2  Anne Baker
+Tennis Court 1  Burton Tracy
+Tennis Court 2  Burton Tracy
+Tennis Court 1  Charles Owen
+Tennis Court 2  Charles Owen
+Tennis Court 1  Darren Smith
+Tennis Court 2  Darren Smith
+Tennis Court 2  David Farrell
+Tennis Court 1  David Farrell
+Tennis Court 2  David Jones
+Tennis Court 1  David Jones
+Tennis Court 1  David Pinker
+Tennis Court 2  David Pinker
+Tennis Court 2  Douglas Jones
+Tennis Court 1  Douglas Jones
+Tennis Court 1  Erica Crumpet
+Tennis Court 2  Erica Crumpet
+Tennis Court 1  Florence Bader
+Tennis Court 2  Florence Bader
+Tennis Court 2  Gerald Butters
+Tennis Court 1  Gerald Butters
+Tennis Court 1  GUEST GUEST
+Tennis Court 2  GUEST GUEST
+Tennis Court 1  Henrietta Rumney
+Tennis Court 2  Henrietta Rumney
+Tennis Court 1  Henry Worthington-Smyth
+Tennis Court 2  Henry Worthington-Smyth
+Tennis Court 1  Hyacinth Tupperware
+Tennis Court 2  Hyacinth Tupperware
+Tennis Court 1  Jack Smith
+Tennis Court 2  Jack Smith
+Tennis Court 1  Janice Joplette
+Tennis Court 2  Janice Joplette
+Tennis Court 2  Jemima Farrell
+Tennis Court 1  Jemima Farrell
+Tennis Court 2  Joan Coplin
+Tennis Court 1  Joan Coplin
+Tennis Court 2  John Hunt
+Tennis Court 1  John Hunt
+Tennis Court 2  Matthew Genting
+Tennis Court 1  Matthew Genting
+Tennis Court 2  Millicent Purview
+Tennis Court 1  Millicent Purview
+Tennis Court 2  Nancy Dare
+Tennis Court 1  Nancy Dare
+Tennis Court 2  Ponder Stibbons
+Tennis Court 1  Ponder Stibbons
+Tennis Court 1  Ramnaresh Sarwin
+Tennis Court 2  Ramnaresh Sarwin
+Tennis Court 1  Tim Boothe
+Tennis Court 2  Tim Boothe
+Tennis Court 2  Tim Rownam
+Tennis Court 1  Tim Rownam
+Tennis Court 1  Timothy Baker
+Tennis Court 2  Timothy Baker
+Tennis Court 1  Tracy Smith
+Tennis Court 2  Tracy Smith
 
 
 
