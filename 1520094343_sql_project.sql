@@ -68,7 +68,7 @@ facid	name	           membercost	  monthlymaintenance
 /* Q4: How can you retrieve the details of facilities with ID 1 and 5?
 Write the query without using the OR operator. */
 
-SELECT * FROM `Facilities` WHERE facid IN ('1','5')
+SELECT * FROM Facilities WHERE facid IN ('1','5')
 
 facid	name	          membercost	guestcost  initialoutlay   monthlymaintenance
 1	Tennis Court 2	  5	        25	   8000            200
@@ -106,7 +106,7 @@ FROM Bookings
 JOIN Members
 ON Bookings.memid = Members.memid
 WHERE starttime = (SELECT MAX(starttime) FROM Bookings) AND
-      firstname != 'GUEST'
+      Bookings.memid != '0'
 
 firstname	surname
 Henry           Worthington-Smyth
@@ -117,14 +117,13 @@ Include in your output the name of the court, and the name of the member
 formatted as a single column. Ensure no duplicate data, and order by
 the member name. */
 
-SELECT DISTINCT 
-       Facilities.name,
-       CONCAT(Members.firstname,' ',Members.surname) AS member_name      
+SELECT DISTINCT Facilities.name,
+                CONCAT(Members.firstname,' ',Members.surname) AS member_name      
 FROM Bookings
 JOIN Facilities
 ON Bookings.facid = Facilities.facid
 JOIN Members
-ON Bookings.memid - Members.memid
+ON Bookings.memid = Members.memid
 WHERE Facilities.name LIKE '%Tennis Court%'
 ORDER BY member_name
 
